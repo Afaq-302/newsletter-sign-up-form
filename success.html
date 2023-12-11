@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Success Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="h-screen bg-[#36384d] flex flex-row justify-center items-center">
+    <div
+      class="w-[400px] h-[400px] flex flex-col shadow-2xl rounded-2xl bg-white gap-6 px-12 py-8"
+    >
+      <!-- ##### FORM SECTION ##### -->
+      <img src="assets/images/icon-list.svg" class="w-[50px]" alt="" />
+      <h2 class="text-5xl font-bold text-[#232846]">Thanks for Subscribing!</h2>
+      <p class="text-[13px] text-[#232846]">
+        A confirmation email has been sent to
+        <span class="font-semibold">afaq@company.com</span>.Please open it and
+        click the button inside to confirm your subscription.
+      </p>
+
+      <button
+        id="dismissBtn"
+        class="bg-[#232742] text-white text-[13px] font-light rounded-lg px-10 py-3 w-full hover:bg-[rgb(255,83,123)] hover:bg-[linear-gradient(90deg,_rgba(255,83,123,1)_27%,_rgba(255,105,62,1)_90%)] hover:[box-shadow:1px_2px_10px_rgb(183_53_83)]"
+      >
+        Dismiss message
+      </button>
+    </div>
+
+    <script>
+      const dismissBtn = document.getElementById("dismissBtn");
+      dismissBtn.addEventListener("click", function () {
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>
